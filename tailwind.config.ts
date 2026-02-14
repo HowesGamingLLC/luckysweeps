@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "Inter", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -80,10 +83,37 @@ export default {
             height: "0",
           },
         },
+        "spin-slow": {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        "bounce-subtle": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        "pulse-glow": {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.8",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
     },
   },
