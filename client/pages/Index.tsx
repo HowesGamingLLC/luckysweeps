@@ -507,9 +507,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Games</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Spin Wheel</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Scratch Cards</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Lottery</a></li>
+                <li><Link to="/games" className="hover:text-primary transition-colors">Spin Wheel</Link></li>
+                <li><Link to="/games" className="hover:text-primary transition-colors">Scratch Cards</Link></li>
+                <li><Link to="/games" className="hover:text-primary transition-colors">Lottery</Link></li>
               </ul>
             </div>
             <div>
@@ -517,15 +517,15 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><Link to="/login" className="hover:text-primary transition-colors">Login</Link></li>
                 <li><Link to="/register" className="hover:text-primary transition-colors">Register</Link></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Support</a></li>
+                <li><Link to="/notifications" className="hover:text-primary transition-colors">Support</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Terms</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Responsible Gaming</a></li>
+                <li><span className="text-muted-foreground cursor-default">Terms of Service</span></li>
+                <li><span className="text-muted-foreground cursor-default">Privacy Policy</span></li>
+                <li><span className="text-muted-foreground cursor-default">Responsible Gaming</span></li>
               </ul>
             </div>
           </div>
