@@ -15,7 +15,7 @@ import Settings from "./pages/Settings";
 import Deposits from "./pages/Deposits";
 import Withdrawals from "./pages/Withdrawals";
 import Notifications from "./pages/Notifications";
-import AdminDashboard from "./pages/AdminDashboard";
+import AdminDashboardEnhanced from "./pages/AdminDashboardEnhanced";
 import { useAuth } from "./hooks/use-auth";
 
 const queryClient = new QueryClient();
@@ -124,7 +124,7 @@ const App = () => (
             path="/admin"
             element={
               <AdminRoute>
-                <AdminDashboard />
+                <AdminDashboardEnhanced />
               </AdminRoute>
             }
           />
